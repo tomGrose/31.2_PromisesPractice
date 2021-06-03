@@ -108,9 +108,12 @@ function addCard(){
         const cardImg = document.createElement('img');
         cardImg.setAttribute("src", `${c.data.cards[0].image}`);
         cardDiv.appendChild(cardImg);
+        if (c.data.remaining === 0){
+            newCardBtn.style.display = 'none';
+        }
     })
     .catch(err => {
-        newCardBtn.style.display = 'none';
+        console.log(`There was a problem ${err}`);
     });
 }
 

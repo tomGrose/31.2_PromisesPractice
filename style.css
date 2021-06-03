@@ -1,0 +1,14 @@
+#card-stack > img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 650px;
+    margin: auto;
+  }
+
+#card-deck {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    
+}
